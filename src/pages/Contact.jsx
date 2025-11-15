@@ -24,22 +24,39 @@ export default function Contact() {
     e.preventDefault()
     setIsSubmitting(true)
     
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false)
-      setIsSubmitted(true)
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        subject: '',
-        message: '',
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
       })
-      
-      setTimeout(() => {
-        setIsSubmitted(false)
-      }, 5000)
-    }, 1500)
+
+      const data = await response.json()
+
+      if (data.success) {
+        setIsSubmitted(true)
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          subject: '',
+          message: '',
+        })
+        
+        setTimeout(() => {
+          setIsSubmitted(false)
+        }, 5000)
+      } else {
+        alert(data.error || 'Une erreur est survenue. Veuillez réessayer.')
+      }
+    } catch (error) {
+      console.error('Erreur lors de l\'envoi du formulaire:', error)
+      alert('Une erreur est survenue. Veuillez réessayer plus tard.')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
