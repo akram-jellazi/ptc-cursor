@@ -3,18 +3,18 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { Calculator, CheckCircle, ArrowRight } from 'lucide-react'
 
 const serviceTypes = [
-  { id: 'reparation', label: 'Réparation', icon: '🔧' },
-  { id: 'installation', label: 'Installation', icon: '⚙️' },
-  { id: 'depannage', label: 'Dépannage d\'urgence', icon: '🚨' },
-  { id: 'renovation', label: 'Rénovation', icon: '🏠' },
-  { id: 'chauffage', label: 'Chauffage', icon: '🔥' },
-  { id: 'autre', label: 'Autre', icon: '📋' },
+  { id: 'reparation', label: 'R├®paration', icon: '­ƒöº' },
+  { id: 'installation', label: 'Installation', icon: 'ÔÜÖ´©Å' },
+  { id: 'depannage', label: 'D├®pannage d\'urgence', icon: '­ƒÜ¿' },
+  { id: 'renovation', label: 'R├®novation', icon: '­ƒÅá' },
+  { id: 'chauffage', label: 'Chauffage', icon: '­ƒöÑ' },
+  { id: 'autre', label: 'Autre', icon: '­ƒôï' },
 ]
 
 const urgencyLevels = [
   { id: 'normal', label: 'Normal', price: 0 },
   { id: 'urgent', label: 'Urgent (24h)', price: 50 },
-  { id: 'tres-urgent', label: 'Très urgent (< 2h)', price: 100 },
+  { id: 'tres-urgent', label: 'Tr├¿s urgent (< 2h)', price: 100 },
 ]
 
 export default function Devis() {
@@ -95,7 +95,7 @@ export default function Devis() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-accent/20 to-accent/10 py-12">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-cyan-50 py-12">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -140,9 +140,9 @@ export default function Devis() {
           </div>
           <div className="flex justify-between text-sm text-gray-600">
             <span>Service</span>
-            <span>Détails</span>
+            <span>D├®tails</span>
             <span>Contact</span>
-            <span>Résultat</span>
+            <span>R├®sultat</span>
           </div>
         </div>
 
@@ -206,7 +206,7 @@ export default function Devis() {
                           <div className="font-medium text-gray-900">{level.label}</div>
                           {level.price > 0 && (
                             <div className="text-sm text-gray-600">
-                              +{level.price}€ de frais d'urgence
+                              +{level.price}Ôé¼ de frais d'urgence
                             </div>
                           )}
                         </div>
@@ -225,7 +225,7 @@ export default function Devis() {
                 exit={{ opacity: 0 }}
               >
                 <h2 className="text-2xl font-semibold mb-6 text-gray-900">
-                  Détails de l'intervention
+                  D├®tails de l'intervention
                 </h2>
                 <div className="space-y-6">
                   <div>
@@ -245,7 +245,7 @@ export default function Devis() {
                   </div>
                   <div>
                     <label htmlFor="date" className="block text-sm font-medium text-gray-700 mb-2">
-                      Date souhaitée (optionnel)
+                      Date souhait├®e (optionnel)
                     </label>
                     <input
                       type="date"
@@ -258,7 +258,7 @@ export default function Devis() {
                   </div>
                   <div>
                     <label htmlFor="description" className="block text-sm font-medium text-gray-700 mb-2">
-                      Description du problème / travaux
+                      Description du probl├¿me / travaux
                     </label>
                     <textarea
                       id="description"
@@ -268,7 +268,7 @@ export default function Devis() {
                       required
                       rows={6}
                       className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent resize-none"
-                      placeholder="Décrivez en détail votre besoin..."
+                      placeholder="D├®crivez en d├®tail votre besoin..."
                     />
                   </div>
                 </div>
@@ -283,7 +283,7 @@ export default function Devis() {
                 exit={{ opacity: 0 }}
               >
                 <h2 className="text-2xl font-semibold mb-6 text-gray-900">
-                  Vos coordonnées
+                  Vos coordonn├®es
                 </h2>
                 <div className="space-y-6">
                   <div>
@@ -318,7 +318,7 @@ export default function Devis() {
                   </div>
                   <div>
                     <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-                      Téléphone
+                      T├®l├®phone
                     </label>
                     <input
                       type="tel"
@@ -358,20 +358,20 @@ export default function Devis() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.3 }}
-                  className="bg-gradient-to-br from-primary to-secondary text-white rounded-lg p-8 mb-6"
+                  className="bg-gradient-to-br from-primary to-cyan-500 text-white rounded-lg p-8 mb-6"
                 >
                   <div className="text-5xl font-bold mb-2">
-                    {estimatedPrice}€
+                    {estimatedPrice}Ôé¼
                   </div>
-                  <div className="text-white/90">
+                  <div className="text-blue-100">
                     Estimation indicative (hors TVA)
                   </div>
                 </motion.div>
                 <p className="text-gray-600 mb-6">
-                  Cette estimation est indicative. Un devis détaillé vous sera envoyé par email après analyse de votre demande.
+                  Cette estimation est indicative. Un devis d├®taill├® vous sera envoy├® par email apr├¿s analyse de votre demande.
                 </p>
                 <div className="bg-gray-50 rounded-lg p-6 text-left mb-6">
-                  <h3 className="font-semibold mb-3 text-gray-900">Récapitulatif</h3>
+                  <h3 className="font-semibold mb-3 text-gray-900">R├®capitulatif</h3>
                   <div className="space-y-2 text-sm text-gray-600">
                     <div className="flex justify-between">
                       <span>Service:</span>
@@ -411,7 +411,7 @@ export default function Devis() {
                   className="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors inline-flex items-center gap-2"
                 >
                   Nouveau devis
-                  <ArrowRight className="text-white" size={20} />
+                  <ArrowRight size={20} />
                 </motion.button>
               </motion.div>
             )}
@@ -432,7 +432,7 @@ export default function Devis() {
                     : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
                 }`}
               >
-                Précédent
+                Pr├®c├®dent
               </motion.button>
               <motion.button
                 type="button"
@@ -447,7 +447,7 @@ export default function Devis() {
                 }`}
               >
                 {step === 3 ? 'Calculer l\'estimation' : 'Suivant'}
-                <ArrowRight className={isStepValid() ? 'text-white' : 'text-gray-400'} size={20} />
+                <ArrowRight size={20} />
               </motion.button>
             </div>
           )}

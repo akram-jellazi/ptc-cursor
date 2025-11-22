@@ -227,8 +227,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Téléphone</h3>
-                    <a href="tel:+33123456789" className="text-gray-600 hover:text-primary transition-colors">
-                      01 23 45 67 89
+                    <a href="tel:+33685902215" className="text-gray-600 hover:text-primary transition-colors">
+                       06 85 90 22 15
                     </a>
                   </div>
                 </motion.div>
@@ -242,8 +242,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
-                    <a href="mailto:contact@plomberie-travaux-confort.fr" className="text-gray-600 hover:text-primary transition-colors">
-                      contact@plomberie-travaux-confort.fr
+                    <a href="mailto:ptcservices27@gmail.com" className="text-gray-600 hover:text-primary transition-colors">
+                      ptcservices27@gmail.com
                     </a>
                   </div>
                 </motion.div>
@@ -258,8 +258,8 @@ export default function Contact() {
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Adresse</h3>
                     <p className="text-gray-600">
-                      123 Rue de la Plomberie<br />
-                      75000 Paris, France
+                      15 rue de Paris <br />
+                      27510 Tilly, France
                     </p>
                   </div>
                 </motion.div>
@@ -287,14 +287,14 @@ export default function Contact() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
-              className="bg-gradient-to-br from-primary to-cyan-500 text-white rounded-lg shadow-lg p-8"
+              className="bg-gradient-to-br from-primary to-secondary text-white rounded-lg shadow-lg p-8"
             >
               <h3 className="text-xl font-semibold mb-4">Besoin d'une intervention urgente ?</h3>
-              <p className="mb-4 text-blue-100">
+              <p className="mb-4 text-white/90">
                 Notre service d'urgence est disponible 24h/24 et 7j/7 pour toutes vos urgences de plomberie.
               </p>
               <motion.a
-                href="tel:+33123456789"
+                href="tel:+33685902215"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="inline-block bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"

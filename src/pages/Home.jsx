@@ -7,37 +7,37 @@ const services = [
     icon: Droplets,
     title: 'Réparation de fuites',
     description: 'Intervention rapide pour toutes vos fuites d\'eau, 24/7',
-    color: 'bg-blue-500',
+    color: 'bg-primary',
   },
   {
     icon: Wrench,
     title: 'Installation sanitaire',
     description: 'Installation complète de vos équipements sanitaires',
-    color: 'bg-green-500',
+    color: 'bg-secondary',
   },
   {
     icon: Thermometer,
     title: 'Chauffage',
     description: 'Installation et réparation de systèmes de chauffage',
-    color: 'bg-orange-500',
+    color: 'bg-primary',
   },
   {
     icon: Droplets,
     title: 'Plomberie générale',
     description: 'Tous travaux de plomberie pour votre confort',
-    color: 'bg-cyan-500',
+    color: 'bg-accent',
   },
   {
     icon: Shield,
     title: 'Dépannage d\'urgence',
     description: 'Service d\'urgence disponible 24h/24 et 7j/7',
-    color: 'bg-red-500',
+    color: 'bg-secondary',
   },
   {
     icon: Wrench,
     title: 'Rénovation salle de bain',
     description: 'Rénovation complète de votre salle de bain',
-    color: 'bg-purple-500',
+    color: 'bg-primary',
   },
 ]
 
@@ -63,7 +63,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-600 via-blue-500 to-cyan-500 text-white overflow-hidden">
+      <section className="relative bg-gradient-to-br from-primary via-secondary to-accent text-white overflow-hidden">
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
           <motion.div
@@ -75,7 +75,7 @@ export default function Home() {
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Plomberie Travaux Confort
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-blue-100">
+            <p className="text-xl md:text-2xl mb-8 text-white/90">
               Votre expert en plomberie pour tous vos besoins
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -194,7 +194,7 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Besoin d'une intervention ?
             </h2>
-            <p className="text-xl mb-8 text-blue-100">
+            <p className="text-xl mb-8 text-white/90">
               Contactez-nous dès maintenant pour un devis gratuit
             </p>
             <motion.div

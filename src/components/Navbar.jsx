@@ -50,7 +50,7 @@ export default function Navbar() {
               className="flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors"
             >
               <Phone size={18} />
-              <span>01 23 45 67 89</span>
+              <span>06 85 90 22 15</span>
             </motion.a>
           </div>
 

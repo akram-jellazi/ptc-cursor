@@ -187,3 +187,7 @@ npm run dev:all  # Démarre Express + Vite
 
 Votre application est maintenant prête à être déployée sur Vercel avec le frontend et le backend dans le même projet !
 
+
+
+
+
