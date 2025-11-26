@@ -60,7 +60,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2 text-gray-400">
                 <Mail size={18} />
-                <span>contact@plomberie-travaux-confort.fr</span>
+                <span>ptcservices27@gmail.com</span>
               </li>
               <li className="flex items-center gap-2 text-gray-400">
                 <MapPin size={18} />
