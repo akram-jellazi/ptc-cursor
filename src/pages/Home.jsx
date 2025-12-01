@@ -72,6 +72,13 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             className="text-center"
           >
+            <div className="flex justify-center mb-6">
+              <img
+                src="/logo-ptc.png"
+                alt="Plomberie Travaux Confort"
+                className="h-20 w-20 md:h-24 md:w-24 object-contain drop-shadow-lg"
+              />
+            </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Plomberie Travaux Confort
             </h1>

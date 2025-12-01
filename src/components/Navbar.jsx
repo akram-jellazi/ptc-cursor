@@ -23,8 +23,15 @@ export default function Navbar() {
             transition={{ duration: 0.5 }}
             className="flex items-center"
           >
-            <Link to="/" className="text-2xl font-bold text-primary">
-              🔧 Plomberie Travaux Confort
+            <Link to="/" className="flex items-center gap-3">
+              <img
+                src="/logo-ptc.png"
+                alt="Plomberie Travaux Confort"
+                className="h-10 w-10 md:h-12 md:w-12 object-contain"
+              />
+              <span className="text-xl md:text-2xl font-bold text-primary">
+                Plomberie Travaux Confort
+              </span>
             </Link>
           </motion.div>
 

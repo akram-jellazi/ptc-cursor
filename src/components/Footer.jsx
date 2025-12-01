@@ -13,7 +13,14 @@ export default function Footer() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h3 className="text-xl font-bold mb-4">Plomberie Travaux Confort</h3>
+            <div className="flex items-center gap-3 mb-4">
+              <img
+                src="/logo-ptc.png"
+                alt="Plomberie Travaux Confort"
+                className="h-10 w-10 object-contain"
+              />
+              <h3 className="text-xl font-bold">Plomberie Travaux Confort</h3>
+            </div>
             <p className="text-gray-400">
               Votre partenaire de confiance pour tous vos travaux de plomberie.
               Professionnalisme et qualité garantis.
@@ -56,7 +63,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-center gap-2 text-gray-400">
                 <Phone size={18} />
-                <span>01 23 45 67 89</span>
+                <span>06 85 90 22 15</span>
               </li>
               <li className="flex items-center gap-2 text-gray-400">
                 <Mail size={18} />
@@ -64,7 +71,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2 text-gray-400">
                 <MapPin size={18} />
-                <span>123 Rue de la Plomberie, 75000 Paris</span>
+                <span>15 rue de Paris, 27510 Tilly</span>
               </li>
             </ul>
             <div className="flex gap-4 mt-4">
